@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Login{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="{{asset('styles/loginPage.css')}}">
+<link rel="stylesheet" href="{{asset('styles/app.css')}}">
+
+<div class="login-wrapper">
+    <div class="login-logo">
+        <img src="{{asset('LOGOS/Final Logo.png')}}" alt="Logo" class="logo-img">
+    </div>
+    
+    <h1>LOGIN</h1>
+    
+    <form class="login-form">
+        <input type="text" placeholder="Phone or Email" name="username">
+        <input type="password" placeholder="Password" name="password">
+        <button type="submit">LOG IN</button>
+    </form>
+    
+    
+    <div class="signup-link">
+        Don't have an account? <a href="#">Sign up</a>
+    </div>
+</div>
+
+{% endblock %}
